@@ -1,0 +1,273 @@
+/*
+Josh Post 
+Yoobee Design School
+Wellington
+
+-- Color Palette --
+
+White = #fff
+Black = #000
+Red = #ee2a28
+Purple = #cea2ff
+Pink = #f27182
+
+*/
+
+section {
+	margin: 0;
+	padding: 0;
+}
+
+#one {
+	display: none;
+}
+
+.contentBox {
+	padding: 2%;
+	display: inline-block;
+	max-height: 25em;
+}
+
+
+.contentBox h2 {
+	font-size: 1.2em;
+}
+
+.contentBox, .contentBox li, .contentBox h2, .contentBox p {
+	/*color: #ee2a28;*/
+	padding-bottom: 1%;
+}
+
+
+/* Mobile View */
+
+@media only all and (max-width: 480px) {
+
+/* Body */
+
+	#portableCallout {
+		clear: both;
+		height: 17em;
+		width: 94%;
+		padding: 2%;
+		margin: 0 1%;
+		background-image: url('../graphics/tablet-callout.gif');
+		background-size: 90%;
+		background-position: center;
+		background-color: #000;
+	}
+
+	#one {
+		display: none;
+	}
+
+	.portable-image {
+		background-size: 100%;
+		width: 100%;
+		height: 9em;
+	}
+
+	#portable-image-1 {background-image: url('../graphics/mobile-section-1.jpg');}
+	#portable-image-2 {background-image: url('../graphics/mobile-section-2.jpg');}
+
+}
+
+@media only all and (min-width: 481px) {
+
+/* Body */
+
+	#portableCallout {
+		clear: both;
+		margin-top: 4em;
+		height: 30em;
+		width: 100%;
+		background-image: url('../graphics/tablet-callout.gif');
+		background-size: 70%;
+		background-position: center;
+		background-color: #000;
+	}
+
+	section {
+		margin: 0;
+		margin-top: 1%;
+	}
+
+	section h1, section article h1 {
+		width: 99%;
+	}
+	
+	section a {
+		color: #ee2a28;
+	}
+
+	section article p {
+		width: 100%;
+	}
+
+	.contentBox {
+		display: block;
+		width: 40%;
+		float: left;
+	}
+
+	#portable-image-1 {
+		background-image: url('../graphics/tablet-section-1.jpg');
+	}
+
+	#portable-image-2 {
+		background-image: url('../graphics/tablet-section-2.jpg');
+	}
+
+	.portable-image {
+		background-position: center;
+		float: right;
+		margin: 2%;
+		background-size: 100%;
+		width: 15em;
+		height: 15em;
+	}
+
+
+}
+
+@media only all and (min-width: 960px) {
+
+	section h1 a {
+		color: #ee2a28;
+	}
+
+	.contentBox {
+		box-shadow: 5px 5px 5px #aaa;
+		background-color: #fff;
+		margin: 10px 200px 20px 300px; 
+	}
+
+	.page { 
+		height: 1000px; 
+		padding: 0;
+		margin: 0; 
+		width: 100%; 
+		max-width: 1920px; 
+		position: relative;
+		top: 50px;
+		margin: 0 auto; 
+		border-top: 1px solid rgba(255,255,255,0.3); 
+		border-bottom: 1px solid rgba(0,0,0,0.4);
+	}
+
+	#one {
+		display: block;
+		background: url('../graphics/home-1.jpg') 50% 0 no-repeat fixed;
+	}
+	#two { 
+		background: url('../graphics/home-2.jpg') 50% 0 no-repeat fixed;
+	}
+	#three { 
+		background: url('../graphics/home-3.jpg') 50% 0 no-repeat fixed;
+	}
+
+	#one .titleScroll { 
+		background-image: url('../graphics/logo-black.png');
+		background-position: 95% 100px;
+		background-size: 400px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		min-height: 1000px;
+		width: 100%; 
+		max-width: 1920px; 
+		position: relative;
+		margin: 0 auto; 
+	}
+
+	#one article {
+		display: block;
+		top: 15em; 
+		position: absolute;
+		left: 10%;
+		padding-top: 50px;
+		height: 300px;
+		text-align: center;
+		background-image: none;
+		background-color: #000;
+	}
+
+	#one h1 {
+		font-size: 4.5em;
+		text-align: center;
+		padding: 50px;
+		width: 300px;
+	}
+
+	#two h1 {
+		display: block;
+		top: 250px; 
+		position: absolute;
+		left: 10%;
+		width: 400px;
+		padding-top: 50px;
+		height: 200px;
+		text-align: center;
+		background-image: none;
+		background-color: #000;
+		font-size: 4.5em;
+	}
+
+	#two .contentBox {
+		display: block;
+		top: 250px;
+		position: absolute;
+		left: 30%;
+		width: 30%;
+		text-align: center;
+		background-image: none;
+		background-color: #fff;
+		text-align: left;
+		font-size: 1em;
+	}
+
+	#three h1 {
+		display: block;
+		top: 250px; 
+		position: absolute;
+		left: 10%;
+		width: 400px;
+		padding-top: 50px;
+		height: 200px;
+		text-align: center;
+		background-image: none;
+		background-color: #000;
+		font-size: 4.5em;
+	}
+
+	#three .contentBox {
+		display: block;
+		top: 250px; 
+		position: absolute;
+		left: 30%;
+		width: 30%;
+		text-align: center;
+		background-image: none;
+		background-color: #fff;
+		text-align: left;
+		font-size: 0.9em;
+	}
+	
+	#three .contentBox h2 {
+		color: #000;
+	}
+
+	#three .contentBox ul li p {
+		font-size: 1.2em;
+	}
+
+
+
+
+
+
+
+
+
+
+
+}
